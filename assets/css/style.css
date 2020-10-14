@@ -1,5 +1,37 @@
-nav {
+@font-face {
+    font-family: Lora;
+    src: url("../font/SansitaSwashed-Bold.ttf");
+}
 
+@font-face {
+    font-family: Montserra;
+    src: url("../font/Montserrat-Black.tff");
+}
+
+html,
+body {
+    margin: 0;
+}
+
+p,
+span,
+textarea,
+input,
+label,
+li,
+ul,
+table,
+a {
+    font-family: Lora;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Montserra;
 }
 
 nav ul {
@@ -12,4 +44,125 @@ nav li {
     border-radius: 10px;
     padding: 10px;
     margin-left: 5px;
+}
+
+
+/* DIV PRINCIPAL */
+
+#container-home {
+    width: 100%;
+    height: 600px;
+    background-color: aqua;
+}
+
+#container-body {
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+#container-intro {
+    width: 99%;
+    height: 500px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+#container-tech {
+    width: 99%;
+    height: 850px;
+    background-color: orange;
+    margin: 0 auto;
+}
+
+#container-tech-head {
+    width: 99%;
+    height: 350px;
+    background-color: green;
+    margin: 0 auto;
+}
+
+#container-tech-body {
+    margin: 0 auto;
+    width: 99%;
+    height: 500px;
+    background-color: blue;
+    margin: 0 auto;
+}
+
+#container-autopilot {
+    width: 99%;
+    height: 850px;
+    background-color: brown;
+    margin: 0 auto;
+}
+
+#container-autopilot-head {
+    width: 99%;
+    height: 350px;
+    background-color: green;
+    margin: 0 auto;
+}
+
+#container-autopilot-body {
+    width: 99%;
+    height: 500px;
+    background-color: blue;
+    margin: 0 auto;
+}
+
+#container-autopilot-menu-collapse {
+    width: 99%;
+    height: 100px;
+    margin: 0 auto;
+    background-color: grey;
+}
+
+#container-menu-collapse {
+    width: 99%;
+    height: 900px;
+    margin: 0 auto;
+    background-color: darkgrey;
+}
+
+#container-menu-collapse-1 {
+    width: 99%;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #13242A;
+}
+
+#container-menu-collapse-2 {
+    width: 99%;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #264580;
+}
+
+#container-menu-collapse-3 {
+    width: 99%;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #13242A;
+}
+
+#container-img-slide {
+    width: 99%;
+    height: 1000px;
+    margin: 0 auto;
+    background-color: #32200b;
+}
+
+#container-footer-left {
+    width: 50%;
+    height: 600px;
+    background-color: darkred;
+    float: left;
+}
+
+#container-footer-right {
+    width: 50%;
+    height: 600px;
+    background-color: darkviolet;
+    float: left;
 }
