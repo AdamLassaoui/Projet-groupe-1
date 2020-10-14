@@ -35,6 +35,13 @@ h6 {
     font-family: Montserra;
 }
 
+.nav-logo {
+    padding: 10px 60px 10px 60px;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
 nav ul {
     list-style-type: none;
     padding-left: 0;
@@ -44,17 +51,19 @@ nav ul {
 nav li {
     display: inline;
     background-color: grey;
-    border-radius: 10px;
-    padding: 10px;
-    margin-left: 5px;
+    border-radius: 1px;
+    padding: 18px 15px 18px 15px;
 }
 
-.nav-logo {
-    padding: 10px 60px 10px 60px;
-    background-image: url("../img/logo.png");
-    background-repeat: no-repeat;
-    cursor: pointer;
+nav li a {
+    color: white;
+    text-decoration: transparent;
 }
+
+nav li a:visited {
+    color: white;
+}
+
 
 
 /* DIV PRINCIPAL */
