@@ -1,5 +1,34 @@
-nav {
+@font-face {
+    font-family: Lora;
+    src: url("../font/SansitaSwashed-Bold.ttf");
+}
 
+@font-face {
+    font-family: Montserra;
+    src: url("../font/Montserrat-Black.tff");
+}
+
+p,
+span,
+textarea,
+input,
+label,
+li,
+ul,
+table,
+a{
+    font-family: Lora;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: Montserra;
 }
 
 nav ul {
