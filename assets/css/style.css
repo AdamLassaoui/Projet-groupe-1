@@ -37,6 +37,8 @@ h6 {
 
 nav ul {
     list-style-type: none;
+    padding-left: 0;
+    margin-left: 10px;
 }
 
 nav li {
@@ -47,10 +49,11 @@ nav li {
     margin-left: 5px;
 }
 
-.nav-logo a {
+.nav-logo {
     padding: 10px 60px 10px 60px;
     background-image: url("../img/logo.png");
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 
