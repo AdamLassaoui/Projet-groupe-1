@@ -1,0 +1,19 @@
+nav {
+
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.logo {
+    background: url('https://fr.freelogodesign.org/Content/img/logo-samples/flooop.png');
+}
