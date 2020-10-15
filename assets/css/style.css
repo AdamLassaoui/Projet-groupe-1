@@ -192,15 +192,35 @@ nav li a:visited {
 #container-footer-left {
     width: 30%;
     height: 425px;
-    background-color: #D7EFF7;
+    background-color: #ffffff;
     float: left;
 }
-
+.logoFooter {
+    width: 340px;
+    height: 105px;
+    margin-left: 100px;
+}
+.textFooter {
+    width: 100%;
+    height: 250px;
+}
+.textFooter p {
+    text-align: center;
+    margin-top: 50px
+}
+.bottomFooter {
+    width: 100%;
+    height: 19px;
+    text-align: center;
+}
+.titleFooter {
+    margin-top: 25px;
+}
 #container-footer-left ul {
     margin: 3.5rem;
     font-size: xx-large;
 }
-
+/*FOOTER RIGHT*/
 #container-footer-right {
     width: 70%;
     height: 425px;
@@ -554,5 +574,3 @@ nav li a:visited {
     height: 2rem;
     border-radius: 1.2rem;
 }
-
-.copyright {}
