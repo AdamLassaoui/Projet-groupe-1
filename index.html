@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
     <title>AMST</title>
 </head>
 
@@ -13,18 +14,21 @@
         <nav>
             <ul>
                 <li class="nav-logo"></li>
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#intro">Introduction</a></li>
-                <li><a href="#tech">Technologie</a></li>
-                <li><a href="#autopilot">AutoPilot</a></li>
-                <li><a href="#gallery">Galerie</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="select"><a class="navbutton" href="#home">Accueil</a></li>
+                <li><a class="navbutton" href="#intro">Introduction</a></li>
+                <li><a class="navbutton" href="#tech">Technologie</a></li>
+                <li><a class="navbutton" href="#autopilot">AutoPilot</a></li>
+                <li><a class="navbutton" href="#gallery">Galerie</a></li>
+                <li><a class="navbutton" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <div id="container-home">
 
-    </div>
+    <section id="home">
+        <div id="container-home">
+
+        </div>
+    </section>
 
     <div id="container-body">
         <!-- CONTAINER TECHNOLOGIE -->
@@ -62,8 +66,8 @@
 
                         sera la matière grise. L’intelligence artificielle encadre le tout
 
-                            pour faire prendre les bonnes décisions au bon moment à votre
-                        </p>
+                        pour faire prendre les bonnes décisions au bon moment à votre
+                    </p>
                 </div>
                 <div id="container-tech-body">
                     <p>Perceptions de l’information :
@@ -74,9 +78,9 @@
 
                         de l’<strong>équiper d’une multitude de capteurs :
 
-                        caméras, radars, lasers tels que des lidars, capteurs
+                            caméras, radars, lasers tels que des lidars, capteurs
 
-                        ultrasons. Tous ces capteurs constituent en quelque sorte</strong>
+                            ultrasons. Tous ces capteurs constituent en quelque sorte</strong>
 
                         les « yeux » de la voiture et collectent en permanence toutes les
 
@@ -91,7 +95,7 @@
                         différente se complètent.
                     </p>
                 </div>
-                        
+
             </div>
         </section>
         <!-- FIN CONTAINER TECHNOLOGIE -->
@@ -132,14 +136,33 @@
 
 
         <!-- MENU DEROULANT -->
-        <div id="container-autopilot-menu-collapse">
+        
+        <section id="container-autopilot-menu-collapse">
+            <button type="button" class="collapsible">Plus d'infos</button>
+            <div class="content">
+               <div class="content-1"><h3 class="content-title">Caméras avant principale, grand angle et longue distance</h3><p class="content-text1">
 
-        </div>
-        <div id="container-menu-collapse">
-            <div id="container-menu-collapse-1"></div>
-            <div id="container-menu-collapse-2"></div>
-            <div id="container-menu-collapse-3"></div>
-        </div>
+                Trois caméras installées derrière le pare-brise offrent à la fois un grand angle de vue à l'avant de votre Tesla et une détection précise des objets à longue distance.<br>
+                
+                Grand angle<br>
+                
+                Une caméra fish eye à 120° détecte les feux de signalisation, les obstacles susceptibles de vous couper la route et les objets à proximité. Une fonctionnalité particulièrement appréciable en ville et lors des manœuvres.<br>
+                
+                Principale<br>
+                
+                Couvre un vaste champ d'applications.</p><img class="image-content-1" src="https://www.tesla.com/tesla_theme/assets/img/features/autopilot/cameras-triclops.png?20161101" /></div>
+                <div class="content-2"><h3 class="content-title">Caméras latérales orientées vers l'avant</h3><p class="content-text2">
+                    
+                    
+                    Plusieurs caméras frontales et latérales à 90° surveillent les véhicules entrant dans votre voie de circulation et augmentent encore votre sécurité lorsque vous franchissez une intersection dans des conditions de visibilité limitée.
+                    </p><img class="image-content-2" src="https://www.tesla.com/tesla_theme/assets/img/features/autopilot/cameras-side_front.png?20161101" /></div>
+               <div class="content-3"> <h3 class="content-title">Caméras arrière</h3><p class="content-text3">
+               
+                
+                Bien plus qu'une aide à la marche arrière, la caméra arrière fait désormais partie intégrante des équipements du système Autopilot grâce à une optique encore plus performante.<br> La caméra arrière est essentielle lors des manœuvres de stationnement difficiles.<br>
+                </p><img class="image-content-3" src="https://www.tesla.com/tesla_theme/assets/img/features/autopilot/cameras-side_rear.png?20161101" /></div>
+            </div>
+        </section>
         <!-- FIN MENU DEROULANT -->
 
 
@@ -166,13 +189,12 @@
 
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
 
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+                <div class="dotPosition">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
         </section>
     </div>
@@ -180,10 +202,13 @@
 
     <!-- FOOTER -->
     <section id="contact">
+           
         <footer>
             <div id="container-footer-left">
-                <a href="">Mention légales</a>
-                <a href="">&copy; AMST 2020</a>
+                <ul>
+                    <li><a href="">Mention légales</a></li>
+                </ul>
+                <a class="copyright" href="">&copy; AMST 2020</a>
             </div>
             <div id="container-footer-right">
                 <h1>Contact</h1>
@@ -229,7 +254,9 @@
     </section>
     <!-- FIN FOOTER -->
 
+    <script src="assets/JS/scriptCollapse.js"></script>
     <script src="assets/js/scriptSlide.js"></script>
+    <script src="assets/js/scriptSectionScroll.js"></script>
 </body>
 
 </html>
