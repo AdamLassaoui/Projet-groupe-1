@@ -138,11 +138,13 @@ nav li a:visited {
 }
 
 #container-autopilot-head {
-    width: 100%;
-    height: 350px;
-    background-color:white;
-    margin: 0 auto;
-    text-align: center;
+    margin: 0 15% 0 15%;
+    text-align: justify;
+    font-size: 25px;
+    border-left: 0.2em solid #13495B;
+    padding-left: 30px;
+    float: left;
+
 }
 
 #container-autopilot-body {
@@ -150,6 +152,9 @@ nav li a:visited {
     height: 500px;
     background-color:white;
     margin: 0 auto;
+    font-size: 25px;
+    font-family:Lora;
+    
 }
 
 #container-autopilot-menu-collapse {
