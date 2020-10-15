@@ -11,6 +11,7 @@
 html,
 body {
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 p,
@@ -34,17 +35,35 @@ h6 {
     font-family: Montserra;
 }
 
+.nav-logo {
+    padding: 10px 60px 10px 60px;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
 nav ul {
     list-style-type: none;
+    padding-left: 0;
+    margin-left: 10px;
 }
 
 nav li {
     display: inline;
     background-color: grey;
-    border-radius: 10px;
-    padding: 10px;
-    margin-left: 5px;
+    border-radius: 1px;
+    padding: 18px 15px 18px 15px;
 }
+
+nav li a {
+    color: white;
+    text-decoration: transparent;
+}
+
+nav li a:visited {
+    color: white;
+}
+
 
 
 /* DIV PRINCIPAL */
@@ -52,7 +71,9 @@ nav li {
 #container-home {
     width: 100%;
     height: 600px;
-    background-color: aqua;
+    background: url(../img/bg-home.jpg);
+    background-repeat: no-repeat;
+    background-position-y: -215px;
 }
 
 #container-body {
@@ -102,6 +123,7 @@ nav li {
     height: 350px;
     background-color: green;
     margin: 0 auto;
+    text-align: center;
 }
 
 #container-autopilot-body {
@@ -164,5 +186,60 @@ nav li {
     width: 50%;
     height: 600px;
     background-color: darkviolet;
+    float: left;
+}
+.autopilotTitle{
+    width: 30%;
+    height:50px;
+    margin-left: 35%;
+    margin-right: 35%;
+
+
+}
+.autopilotText {
+    width: 60%;
+    margin-left: 20%;
+    margin-right:20%;
+    height: 200px;
+    text-align: center;
+
+}
+.autopilotImage {
+    background-image:url("https://www.usinenouvelle.com/mediatheque/7/6/7/000476767_image_896x598/vehicule-autonome.jpg");
+    width:30% ;
+    margin-left:100px ;
+    margin-right: 100px;
+    height:300px;
+    float: left;
+    margin-top: 6%;
+}
+.autopilotText2 {
+    width: 40%;
+    margin-left: 200px;
+    margin-left: 200px;
+    height: 300px;
+    text-align: center;
+    float:right;
+    margin-top: 5%;
+}
+/*------DIV CLASS -----*/
+
+.introTitle {
+    width: 50%;
+    height: 100px;
+    font-size: 40px;
+    margin-left: 40%;
+    margin-top: 50px;
+    font-weight: bold;
+    float: left;
+}
+.introText {
+    width: 70%;
+    height: 250px;
+    margin: 0 15% 0 15%;
+    text-align: justify;
+    font-size: 25px;
+    border-left: 0.2em solid #13495B;
+    padding-left: 30px;
     float: left;
 }

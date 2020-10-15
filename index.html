@@ -7,17 +7,18 @@
     <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
     <title>AMST</title>
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href=""><img src="logo.png" alt="photo logo"></a></li>
-                <li><a href="">Accueil</a></li>
-                <li><a href="">Introduction</a></li>
-                <li><a href="">Technologie</a></li>
-                <li><a href="">AutoPilot</a></li>
-                <li><a href="">Galerie</a></li>
-                <li><a href="">Contact</a></li>
+                    <li class="nav-logo"></li>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#tech">Technologie</a></li>
+                    <li><a href="#autopilot">AutoPilot</a></li>
+                    <li><a href="#gallery">Galerie</a></li>
+                    <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -27,61 +28,98 @@
 
     <div id="container-body">
         <!-- CONTAINER TECHNOLOGIE -->
-        
-        <div id="container-intro">
-            
-        </div>
+
+        <section id="intro">
+            <div id="container-intro">
+                <div class="introTitle">RODEON 2020</div>
+                <div class="introText">
+                    <p>Depuis une vingtaine d’années, AMST automobile et ses ingénieurs ont pour objectif de faire
+                        rouler sur les routes des voitures totalement autonomes.<br> Ces voitures qui peuvent circuler
+                        sans intervention d’un conducteur, utilisent simultanément plusieurs technologies de capteurs et
+                        d’intelligence artificielle qui leur permettent de détecter l’environnement, de fusionner les
+                        informations obtenues pour l’analyser, de décider d’une action et de la mettre en œuvre.
+                        En 2020 AMST vous propose un voyage dans le futur à bord de son premier Concept Car « Rodeon ».
+                    </p>
+                </div>
+            </div>
+        </section>
         <!-- FIN CONTAINER TECHNOLOGIE -->
-        
+
 
         <!-- CONTAINER TECHNOLOGIE -->
         <div id="container-tech">
-            <div id="container-tech-head"><p></p>
+            <div id="container-tech-head">
+                <p></p>
                 <h2>Technologie d'assistance</h2>
                 <p>A bord de la « RODEON » vous trouverez tout une gamme de
-                    
+
                     haute technologie qui vous assistera lors de votre conduite .
-                    
+
                     Caméra, radars, lasers tels que les lidars, capteurs ultrasons. Ces
-                    
+
                     capteurs seront vos yeux. L’ordinateur central « Autopilot »
-                    
+
                     sera la matière grise. L’intelligence artificielle encadre le tout
-                    
-                    pour faire prendre les bonnes décisions au bon moment à votre 
-                    Perceptions de l’information : 
-                    
+
+                    pour faire prendre les bonnes décisions au bon moment à votre
+                    Perceptions de l’information :
+
                     la première étape
-                    
+
                     pour qu’une voiture autonome conduise à la place du conducteur est
-                    
+
                     de l’équiper d’une multitude de capteurs :
-                    
+
                     caméras, radars, lasers tels que des lidars, capteurs
-                    
+
                     ultrasons. Tous ces capteurs constituent en quelque sorte
-                    
+
                     les « yeux » de la voiture et collectent en permanence toutes les
-                    
+
                     informations extérieures utiles à la conduite comme le trafic
-                    
+
                     routier ou encore les panneaux de signalisation. Afin d’assurer une
-                    
+
                     autonomie sans faille, tous les capteurs sont redondants
-                    
+
                     et les informations données par des capteurs de nature physique
-                    
-                    différente se complètent. 
-                    </p>
+
+                    différente se complètent.
+                </p>
             </div>
             <div id="container-tech-body"></div>
         </div>
 
-        <div id="container-autopilot">
-            <div id="container-autopilot-head"></div>
-            <div id="container-autopilot-body"></div>
-        </div>
-        <!-- FIN CONTAINER TECHNOLOGIE -->
+        <!-- CONTAINER AUTOPILOT -->
+        <section id="autopilot">
+            <div id="container-autopilot">
+                <div id="container-autopilot-head">
+                    <div class="autopilotTitle">
+                        <h1>AutoPilot</h1>
+                    </div>
+                    <div class="autopilotText">
+                        <p>Perceptions de l'information :</br> la première étape </br> pour qu'une voiture autonome
+                            conduise à la place du conducteur est</br><strong>équiper d'une multitude de capteurs
+                                :<br />caméras , radats , lasers tels que des lidars , capteurs<br />ultrasons. Tous ces
+                                capteurs constituent en quelque sorte</strong>
+                        </p>
+                    </div>
+                </div>
+                <div id="container-autopilot-body">
+                    <div class="autopilotText2">
+                        <p>La fusion et analyse des informations récoltées </br>Les informations brutes collectées par
+                            tous les capteurs sont</br>acheminées vers <strong>le cerveau de la voiture , le
+                                logiciel</br>informatique.C'est lui le pilote.Il analyse,recoupe et</br>donne un sens
+                                aux données en temps réel.il repose</strong></br>sur une intelligence artificielle.Ce
+                            logiciel informatique a reçu au préalable une</br>phase d'apprentissage pour pouvoir
+                            analyser correctement</br>l'environnement extérieur et reconnaître par exemple un visage
+                            ou</br>comprendre un panneau de signalisation.</p>
+                    </div>
+                    <div class="autopilotImage"></div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN CONTAINER AUTOPILOT -->
 
 
         <!-- MENU DEROULANT -->
@@ -97,17 +135,21 @@
 
 
         <!-- SLIDE IMAGE -->
-        <div id="container-img-slide">
+        <section id="gallery">
+            <div id="container-img-slide">
 
-        </div>
+            </div>
+        </section>
         <!-- FIN SLIDE IMAGE -->
     </div>
 
     <!-- FOOTER -->
-    <footer>
-        <div id="container-footer-left"></div>
-        <div id="container-footer-right"></div>
-    </footer>
+    <section id="contact">
+        <footer>
+            <div id="container-footer-left"></div>
+            <div id="container-footer-right"></div>
+        </footer>
+    </section>
     <!-- FIN FOOTER -->
 </body>
 
