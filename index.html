@@ -5,11 +5,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/aos.css" />
     <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/aos.js"></script>
     <title>AMST</title>
 </head>
 
 <body>
+    <button onclick="topFunction()" id="scrollBtn" title="Retournver vers le haut" data-aos="zoom-in"><i
+        class="arrow up"></i></button>
+    <script>
+        AOS.init({
+            offset: 80
+        });
+    </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("scrollBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
     <header>
         <nav>
             <ul>
@@ -24,7 +55,7 @@
         </nav>
     </header>
 
-    <section id="home">
+    <section class="scrollspy" id="home">
         <div id="container-home">
 
         </div>
@@ -33,7 +64,7 @@
     <div id="container-body">
         <!-- CONTAINER TECHNOLOGIE -->
 
-        <section id="intro">
+        <section class="scrollspy" id="intro">
             <div id="container-intro">
                 <div class="introTitle">RODEON 2020</div>
                 <div class="introText">
@@ -51,12 +82,13 @@
 
 
         <!-- CONTAINER TECHNOLOGIE -->
-        <section id="tech">
+        <section class="scrollspy" id="tech">
             <div id="container-tech">
                 <div id="container-tech-head">
                     <p></p>
                     <h2>Technologie d'assistance</h2>
-                    <p>A bord de la « RODEON » vous trouverez tout une gamme de
+                    <p>
+                        A bord de la « RODEON » vous trouverez tout une gamme de
 
                         haute technologie qui vous assistera lors de votre conduite .
 
@@ -67,33 +99,47 @@
                         sera la matière grise. L’intelligence artificielle encadre le tout
 
                         pour faire prendre les bonnes décisions au bon moment à votre
+
+                        véhicule.
+
+                        Vous avez dit
+
+                        futuriste ? AMST et son concept car « Rodeon » sont
+
+                        le présent.
                     </p>
                 </div>
                 <div id="container-tech-body">
-                    <p>Perceptions de l’information :
+                    <div id="container-tb-left">
+                        <img src="assets/img/exemple de voiture 5.jpg" alt=" photo 4" />
+                    </div>
+                    <div id="container-tb-right">
+                        <p>
+                            Perceptions de l’information :
 
-                        la première étape
+                            la première étape
 
-                        pour qu’une voiture autonome conduise à la place du conducteur est
+                            pour qu’une voiture autonome conduise à la place du conducteur est
 
-                        de l’<strong>équiper d’une multitude de capteurs :
+                            de l’<strong>quiper d’une multitude de capteurs :
 
-                            caméras, radars, lasers tels que des lidars, capteurs
+                                caméras, radars, lasers tels que des lidars, capteurs
 
-                            ultrasons. Tous ces capteurs constituent en quelque sorte</strong>
+                                ultrasons. Tous ces capteurs constituent en quelque sorte</strong>
 
-                        les « yeux » de la voiture et collectent en permanence toutes les
+                            les « yeux » de la voiture et collectent en permanence toutes les
 
-                        informations extérieures utiles à la conduite comme le trafic
+                            informations extérieures utiles à la conduite comme le trafic
 
-                        routier ou encore les panneaux de signalisation. Afin d’assurer une
+                            routier ou encore les panneaux de signalisation. Afin d’assurer une
 
-                        autonomie sans faille, tous les capteurs sont redondants
+                            autonomie sans faille, tous les capteurs sont redondants
 
-                        et les informations données par des capteurs de nature physique
+                            et les informations données par des capteurs de nature physique
 
-                        différente se complètent.
-                    </p>
+                            différente se complètent.
+                        </p>
+                    </div>
                 </div>
 
             </div>
@@ -101,7 +147,7 @@
         <!-- FIN CONTAINER TECHNOLOGIE -->
 
         <!-- CONTAINER AUTOPILOT -->
-        <section id="autopilot">
+        <section class="scrollspy" id="autopilot">
             <div id="container-autopilot">
                 <div id="container-autopilot-head">
                     <div class="autopilotTitle">
@@ -126,7 +172,8 @@
                                 aux données en temps réel. Il repose</strong> sur une intelligence artificielle.Ce
                             logiciel informatique a reçu au préalable une phase d'apprentissage pour pouvoir
                             analyser correctement l'environnement extérieur et reconnaître par exemple un visage
-                            ocomprendre un panneau de signalisation.</p>
+                            ocomprendre un panneau de signalisation.
+                        </p>
                     </div>
                     <div class="autopilotImage"></div>
                 </div>
@@ -192,43 +239,47 @@
 
 
         <!-- SLIDE IMAGE -->
-        <section id="gallery">
+        <section class="scrollspy" id="gallery">
             <div id="container-img-slide">
-                <div class="mySlides">
-                    <div class="numbertext">1 / 3</div>
-                    <img class="fade" src="assets/img/exemple de voiture.jpg">
-                    <div class="text">Texte de description</div>
+                <div id="container-img-left">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 </div>
+                <div id="container-img-center">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 3</div>
+                        <img class="fade" src="assets/img/exemple de voiture.jpg">
+                        <div class="text">Texte de description</div>
+                    </div>
 
-                <div class="mySlides">
-                    <div class="numbertext">2 / 3</div>
-                    <img class="fade" src="assets/img/exemple de voiture1.jpg">
-                    <div class="text">Texte de description</div>
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 3</div>
+                        <img class="fade" src="assets/img/exemple de voiture1.jpg">
+                        <div class="text">Texte de description</div>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 3</div>
+                        <img class="fade" src="assets/img/exemple de voiture2.jpg">
+                        <div class="text">Texte de description</div>
+                    </div>
                 </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">3 / 3</div>
-                    <img class="fade" src="assets/img/exemple de voiture2.jpg">
-                    <div class="text">Texte de description</div>
+                <div id="container-img-right">
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
-
+                <div id="container-img-bottom">
+                    <div class="dotPosition">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
             </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            <div class="dotPosition">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-
         </section>
     </div>
     <!-- FIN SLIDE IMAGE -->
 
     <!-- FOOTER -->
-    <section id="contact">
+    <section class="scrollspy" id="contact">
 
         <footer>
             <div id="container-footer-left">
@@ -284,7 +335,7 @@
     </section>
     <!-- FIN FOOTER -->
 
-    <script src="assets/JS/scriptCollapse.js"></script>
+    <script src="assets/js/scriptCollapse.js"></script>
     <script src="assets/js/scriptSlide.js"></script>
     <script src="assets/js/scriptSectionScroll.js"></script>
 </body>
