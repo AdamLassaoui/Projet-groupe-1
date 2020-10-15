@@ -89,6 +89,7 @@ body {
     margin: 15px 0 0 0;
     scroll-behavior: smooth;
     height: auto;
+    overflow-x: hidden;
 }
 
 p,
