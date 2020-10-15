@@ -27,7 +27,8 @@
     </div>
 
     <div id="container-body">
-        <!-- CONTAINER INTRO -->
+        <!-- CONTAINER TECHNOLOGIE -->
+
         <section id="intro">
             <div id="container-intro">
                 <div class="introTitle">RODEON 2020</div>
@@ -42,14 +43,55 @@
                 </div>
             </div>
         </section>
-        <!-- FIN CONTAINER INTRO -->
+        <!-- FIN CONTAINER TECHNOLOGIE -->
 
 
         <!-- CONTAINER TECHNOLOGIE -->
         <section id="tech">
             <div id="container-tech">
-                <div id="container-tech-head"></div>
-                <div id="container-tech-body"></div>
+                <div id="container-tech-head">
+                    <p></p>
+                    <h2>Technologie d'assistance</h2>
+                    <p>A bord de la « RODEON » vous trouverez tout une gamme de
+
+                        haute technologie qui vous assistera lors de votre conduite .
+
+                        Caméra, radars, lasers tels que les lidars, capteurs ultrasons. Ces
+
+                        capteurs seront vos yeux. L’ordinateur central « Autopilot »
+
+                        sera la matière grise. L’intelligence artificielle encadre le tout
+
+                            pour faire prendre les bonnes décisions au bon moment à votre
+                        </p>
+                </div>
+                <div id="container-tech-body">
+                    <p>Perceptions de l’information :
+
+                        la première étape
+
+                        pour qu’une voiture autonome conduise à la place du conducteur est
+
+                        de l’<strong>équiper d’une multitude de capteurs :
+
+                        caméras, radars, lasers tels que des lidars, capteurs
+
+                        ultrasons. Tous ces capteurs constituent en quelque sorte</strong>
+
+                        les « yeux » de la voiture et collectent en permanence toutes les
+
+                        informations extérieures utiles à la conduite comme le trafic
+
+                        routier ou encore les panneaux de signalisation. Afin d’assurer une
+
+                        autonomie sans faille, tous les capteurs sont redondants
+
+                        et les informations données par des capteurs de nature physique
+
+                        différente se complètent.
+                    </p>
+                </div>
+                        
             </div>
         </section>
         <!-- FIN CONTAINER TECHNOLOGIE -->
@@ -57,8 +99,32 @@
         <!-- CONTAINER AUTOPILOT -->
         <section id="autopilot">
             <div id="container-autopilot">
-                <div id="container-autopilot-head"></div>
-                <div id="container-autopilot-body"></div>
+                <div id="container-autopilot-head">
+                    <div class="autopilotTitle">
+                        <h1>AutoPilot</h1>
+                    </div>
+                    <div class="autopilotText">
+                        <p>Perceptions de l'information :
+                            la première étape
+                            pour qu'une voiture autonome
+                            conduise à la place du conducteur est <strong>équiper d'une multitude de capteurs
+                                :caméras , radats , lasers tels que des lidars, capteursultrasons. Tous ces
+                                capteurs constituent en quelque sorte</strong>
+                        </p>
+                    </div>
+                </div>
+                <div id="container-autopilot-body">
+                    <div class="autopilotText2">
+                        <p>La fusion et analyse des informations récoltées Les informations brutes collectées par
+                            tous les capteurs sontacheminées vers <strong>le cerveau de la voiture, le
+                                logicielinformatique. C'est lui le pilote.Il analyse,recoupe et donne un sens
+                                aux données en temps réel. Il repose</strong> sur une intelligence artificielle.Ce
+                            logiciel informatique a reçu au préalable une phase d'apprentissage pour pouvoir
+                            analyser correctement l'environnement extérieur et reconnaître par exemple un visage
+                            ocomprendre un panneau de signalisation.</p>
+                    </div>
+                    <div class="autopilotImage"></div>
+                </div>
             </div>
         </section>
         <!-- FIN CONTAINER AUTOPILOT -->
@@ -98,25 +164,97 @@
         <!-- SLIDE IMAGE -->
         <section id="gallery">
             <div id="container-img-slide">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 3</div>
+                    <img class="fade" src="assets/img/exemple de voiture.jpg">
+                    <div class="text">Texte de description</div>
+                </div>
 
+                <div class="mySlides">
+                    <div class="numbertext">2 / 3</div>
+                    <img class="fade" src="assets/img/exemple de voiture1.jpg">
+                    <div class="text">Texte de description</div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 3</div>
+                    <img class="fade" src="assets/img/exemple de voiture2.jpg">
+                    <div class="text">Texte de description</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </section>
-        <!-- FIN SLIDE IMAGE -->
     </div>
+    <!-- FIN SLIDE IMAGE -->
 
     <!-- FOOTER -->
     <section id="contact">
            
         <footer>
-            <div id="container-footer-left"></div>
-            <div id="container-footer-right"></div>
+            <div id="container-footer-left">
+                <a href="">Mention légales</a>
+                <a href="">&copy; AMST 2020</a>
+            </div>
+            <div id="container-footer-right">
+                <h1>Contact</h1>
+                <form action="" method="get" class="contact-form">
+                    <ul>
+                        <li>
+                            <label for="name">Prénom : </label>
+                            <input type="text" name="name" id="name" required>
+                        </li>
+                        <li>
+                            <label for="mail">Email : </label>
+                            <input type="text" name="mail" id="mail" required>
+                        </li>
+                        <li>
+                            <label for="zipcode">Code postal : </label>
+                            <input type="text" name="zipcode" id="zipcode" required>
+                        </li>
+
+                        <li>
+                            <label for="lastname">Nom : </label>
+                            <input type="text" name="lastname" id="lastname" required>
+                        </li>
+                        <li>
+                            <label for="phone">Téléphone : </label>
+                            <input type="text" name="phone" id="phone" required>
+                        </li>
+                        <li>
+                            <label for="region">Region : </label>
+                            <input type="text" name="region" id="region" required>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li> <label for="userentry">Question / Commentaires : </label>
+                            <textarea type="text" name="userentry" id="userentry" required></textarea>
+                        </li>
+                        <li>
+                            <input class="btnSubmit" type="submit" value="Envoyer">
+                        </li>
+                    </ul>
+                </form>
+            </div>
         </footer>
     </section>
     <!-- FIN FOOTER -->
 
+<<<<<<< HEAD
     <script src="assets/JS/scriptCollapse.js"></script>
 
 
+=======
+    <script src="assets/js/scriptSlide.js"></script>
+>>>>>>> b3be92eee688927a2b36edcdb40d51e7d658252a
 </body>
 
 </html>
