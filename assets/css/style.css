@@ -126,14 +126,14 @@ nav li a:visited {
 #container-autopilot {
     width: 99%;
     height: 850px;
-    background-color: brown;
+    background-color:white;
     margin: 0 auto;
 }
 
 #container-autopilot-head {
     width: 99%;
     height: 350px;
-    background-color: green;
+    background-color:white;
     margin: 0 auto;
     text-align: center;
 }
@@ -141,7 +141,7 @@ nav li a:visited {
 #container-autopilot-body {
     width: 99%;
     height: 500px;
-    background-color: blue;
+    background-color:white;
     margin: 0 auto;
 }
 
@@ -224,6 +224,7 @@ nav li a:visited {
     height:300px;
     float: left;
     margin-top: 6%;
+    border-radius: 7px;
 }
 .autopilotText2 {
     width: 40%;
