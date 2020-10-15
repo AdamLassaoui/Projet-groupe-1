@@ -105,14 +105,14 @@ nav li a:visited {
 #container-tech {
     width: 99%;
     height: 850px;
-    background-color: orange;
+    background-color: white;
     margin: 0 auto;
 }
 
 #container-tech-head {
     width: 99%;
     height: 350px;
-    background-color: green;
+    background-color: white;
     margin: 0 auto;
 }
 
@@ -120,7 +120,7 @@ nav li a:visited {
     margin: 0 auto;
     width: 99%;
     height: 500px;
-    background-color: blue;
+    background-color: white;
     margin: 0 auto;
 }
 
@@ -134,7 +134,7 @@ nav li a:visited {
 #container-autopilot-head {
     width: 99%;
     height: 350px;
-    background-color: green;
+    background-color:white;
     margin: 0 auto;
     text-align: center;
 }
@@ -255,4 +255,28 @@ nav li a:visited {
     border-left: 0.2em solid #13495B;
     padding-left: 30px;
     float: left;
+}
+#container-tb-lef{
+    background-image: url("../css/exemple de voiture 3.jpg");
+    float: left;
+    width:30% ;
+    margin-left:90px ;
+    margin-right: 90px;
+    height:300px;
+    float: left;
+    margin: 0;
+}
+#container-tb-right{
+    width: 40%;
+    margin-left: 200px;
+    margin-left: 200px;
+    height: 300px;
+    text-align: center;
+    float:right;
+    margin: 0;
+    
+}
+#container-tech-head{
+    text-align: center;
+   margin-left: 500px;
 }
