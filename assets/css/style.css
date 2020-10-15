@@ -135,6 +135,7 @@ nav li a:visited {
     height: 350px;
     background-color: green;
     margin: 0 auto;
+    text-align: center;
 }
 
 #container-autopilot-body {
@@ -198,6 +199,40 @@ nav li a:visited {
     height: 600px;
     background-color: darkviolet;
     float: left;
+}
+.autopilotTitle{
+    width: 30%;
+    height:50px;
+    margin-left: 35%;
+    margin-right: 35%;
+
+
+}
+.autopilotText {
+    width: 60%;
+    margin-left: 20%;
+    margin-right:20%;
+    height: 200px;
+    text-align: center;
+
+}
+.autopilotImage {
+    background-image:url("https://www.usinenouvelle.com/mediatheque/7/6/7/000476767_image_896x598/vehicule-autonome.jpg");
+    width:30% ;
+    margin-left:100px ;
+    margin-right: 100px;
+    height:300px;
+    float: left;
+    margin-top: 6%;
+}
+.autopilotText2 {
+    width: 40%;
+    margin-left: 200px;
+    margin-left: 200px;
+    height: 300px;
+    text-align: center;
+    float:right;
+    margin-top: 5%;
 }
 /*------DIV CLASS -----*/
 
