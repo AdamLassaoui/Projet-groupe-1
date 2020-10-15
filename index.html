@@ -5,11 +5,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/aos.css" />
     <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/aos.js"></script>
     <title>AMST</title>
 </head>
 
 <body>
+    <button onclick="topFunction()" id="scrollBtn" title="Retournver vers le haut" data-aos="zoom-in"><i
+        class="arrow up"></i></button>
+    <script>
+        AOS.init({
+            offset: 80
+        });
+    </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("scrollBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
     <header>
         <nav>
             <ul>
@@ -24,7 +55,7 @@
         </nav>
     </header>
 
-    <section id="home">
+    <section class="scrollspy" id="home">
         <div id="container-home">
 
         </div>
@@ -33,7 +64,7 @@
     <div id="container-body">
         <!-- CONTAINER TECHNOLOGIE -->
 
-        <section id="intro">
+        <section class="scrollspy" id="intro">
             <div id="container-intro">
                 <div class="introTitle">RODEON 2020</div>
                 <div class="introText">
@@ -51,7 +82,7 @@
 
 
         <!-- CONTAINER TECHNOLOGIE -->
-        <section id="tech">
+        <section class="scrollspy" id="tech">
             <div id="container-tech">
                 <div id="container-tech-head">
                     <p></p>
@@ -101,7 +132,7 @@
         <!-- FIN CONTAINER TECHNOLOGIE -->
 
         <!-- CONTAINER AUTOPILOT -->
-        <section id="autopilot">
+        <section class="scrollspy" id="autopilot">
             <div id="container-autopilot">
                 <div id="container-autopilot-head">
                     <div class="autopilotTitle">
@@ -192,7 +223,7 @@
 
 
         <!-- SLIDE IMAGE -->
-        <section id="gallery">
+        <section class="scrollspy" id="gallery">
             <div id="container-img-slide">
                 <div id="container-img-left">
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -203,13 +234,13 @@
                         <img class="fade" src="assets/img/exemple de voiture.jpg">
                         <div class="text">Texte de description</div>
                     </div>
-    
+
                     <div class="mySlides">
                         <div class="numbertext">2 / 3</div>
                         <img class="fade" src="assets/img/exemple de voiture1.jpg">
                         <div class="text">Texte de description</div>
                     </div>
-    
+
                     <div class="mySlides">
                         <div class="numbertext">3 / 3</div>
                         <img class="fade" src="assets/img/exemple de voiture2.jpg">
@@ -232,7 +263,7 @@
     <!-- FIN SLIDE IMAGE -->
 
     <!-- FOOTER -->
-    <section id="contact">
+    <section class="scrollspy" id="contact">
 
         <footer>
             <div id="container-footer-left">
