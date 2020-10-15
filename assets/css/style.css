@@ -139,13 +139,17 @@ nav li a:visited {
     background-color: grey;
 }
 
-#container-menu-collapse {
-    width: 99%;
-    height: 900px;
-    margin: 0 auto;
+.content {
     background-color: darkgrey;
-}
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    display: none;
 
+}
+/*
 #container-menu-collapse-1 {
     width: 99%;
     height: 300px;
@@ -165,13 +169,14 @@ nav li a:visited {
     height: 300px;
     margin: 0 auto;
     background-color: #13242A;
-}
+}*/
 
 #container-img-slide {
     width: 99%;
     height: 1000px;
     margin: 0 auto;
     background-color: #32200b;
+    display: block;
 }
 
 #container-footer-left {
@@ -208,3 +213,109 @@ nav li a:visited {
     padding-left: 30px;
     float: left;
 }
+
+/*-----MENU DEROULANT------*/
+
+
+.collapsible {
+    background-color:#13495B ;
+    color: #000000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 25px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #95D4E9;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+
+.image-content-1 {
+    width: 35%;
+    height: 250px;
+    background-color: #353535;
+}
+.image-content-2 {
+    width: 35%;
+    height: 250px;
+    background-color: #353535;
+}
+.image-content-3 {
+    width: 35%;
+    height: 250px;
+    background-color: #353535;
+}
+.content-1 {
+    width: 100%;
+    height: 300px;
+    float: left;
+    background-color: #353535;
+}  
+.content-2 {
+    border-top:0.3em solid #13495B ;
+    width: 100%;
+    height: 300px;
+    float: left;
+    background-color: #353535;
+}
+.content-3 {
+    border-top:0.3em solid #13495B;
+    width: 100%;
+    height: 300px;
+    float: left;
+    background-color: #353535;
+}
+.content-text1 {
+    margin-top: 50px;
+    width: 30%;
+    height: 250px;
+    float: left;
+    text-align: justify;
+    margin-left: 10%;
+    padding-right: 30px;
+    font-size: 15px;
+    color: #f5f5f5;
+}
+.content-text2 {
+    color: #f5f5f5;
+    margin-top: 80px;
+    width: 30%;
+    height: 250px;
+    float: left;
+    text-align: justify;
+    margin-left: 10%;
+    padding-right: 30px;
+}
+.content-text3 {
+    color: #f5f5f5;
+    margin-top: 70px;
+    width: 30%;
+    height: 250px;
+    float: left;
+    text-align: justify;
+    margin-left: 10%;
+    padding-right: 30px;
+}
+.content-title {
+    color: #f5f5f5;
+  padding-left: 20px;
+  margin-right: 50rem;
+  margin: 0;
+}
+    
+
