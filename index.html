@@ -13,7 +13,7 @@
 
 <body>
     <button onclick="topFunction()" id="scrollBtn" title="Retournver vers le haut" data-aos="zoom-in"><i
-        class="arrow up"></i></button>
+            class="arrow up"></i></button>
     <script>
         AOS.init({
             offset: 80
@@ -46,11 +46,11 @@
             <ul>
                 <li class="nav-logo"></li>
                 <li class="select"><a class="navbutton" href="#home">Accueil</a></li>
-                <li><a class="navbutton" href="#intro">Introduction</a></li>
-                <li><a class="navbutton" href="#tech">Technologie</a></li>
-                <li><a class="navbutton" href="#autopilot">AutoPilot</a></li>
-                <li><a class="navbutton" href="#gallery">Galerie</a></li>
-                <li><a class="navbutton" href="#contact">Contact</a></li>
+                <li><a class="navbutton" data-aos="flip-down" href="#intro">Introduction</a></li>
+                <li><a class="navbutton" data-aos="flip-down" href="#tech">Technologie</a></li>
+                <li><a class="navbutton" data-aos="flip-down" href="#autopilot">AutoPilot</a></li>
+                <li><a class="navbutton" data-aos="flip-down" href="#gallery">Galerie</a></li>
+                <li><a class="navbutton" data-aos="flip-down" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -66,7 +66,9 @@
 
         <section class="scrollspy" id="intro">
             <div id="container-intro">
-                <div class="introTitle">RODEON 2020</div>
+                <div class="introTitle">
+                    <h1 data-aos="zoom-in-down">RODEON 2020</h1>
+                </div>
                 <div class="introText">
                     <p>Depuis une vingtaine d’années, AMST automobile et ses ingénieurs ont pour objectif de faire
                         rouler sur les routes des voitures totalement autonomes.<br> Ces voitures qui peuvent circuler
@@ -248,19 +250,16 @@
                     <div class="mySlides">
                         <div class="numbertext">1 / 3</div>
                         <img class="fade" src="assets/img/exemple de voiture.jpg">
-                        <div class="text">Texte de description</div>
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">2 / 3</div>
                         <img class="fade" src="assets/img/exemple de voiture1.jpg">
-                        <div class="text">Texte de description</div>
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">3 / 3</div>
                         <img class="fade" src="assets/img/exemple de voiture2.jpg">
-                        <div class="text">Texte de description</div>
                     </div>
                 </div>
                 <div id="container-img-right">
@@ -284,12 +283,22 @@
         <footer>
             <div id="container-footer-left">
                 <div class="logoFooter"><img src="./assets/img/logofooter.png" alt="image du logo de la marque" /></div>
-                <div class="textFooter"><h3 class="titleFooter">Adresse</h3><p>AMST / Amsterdam Zuid-Oost<br>
-                    Burgemeester Stramanweg 122<br>
-                    1101 EN, Amsterdam<br>
-                    Pays-Bas</p><p>Phone: +31 20 36 50 008</p></div>
-                <div class="bottomFooter"><div class="copyright"><a href="https://www.service-public.fr/professionnels-entreprises/vosdroits/F31228" target="_blank"><p>AMST © 2020 / Copyright</p></a></div></div>
-                
+                <div class="textFooter">
+                    <h3 class="titleFooter">Adresse</h3>
+                    <p>AMST / Amsterdam Zuid-Oost<br>
+                        Burgemeester Stramanweg 122<br>
+                        1101 EN, Amsterdam<br>
+                        Pays-Bas</p>
+                    <p>Phone: +31 20 36 50 008</p>
+                </div>
+                <div class="bottomFooter">
+                    <div class="copyright"><a
+                            href="https://www.service-public.fr/professionnels-entreprises/vosdroits/F31228"
+                            target="_blank">
+                            <p>AMST © 2020 / Copyright</p>
+                        </a></div>
+                </div>
+
             </div>
             <div id="container-footer-right">
                 <h1>Contact</h1>

@@ -112,6 +112,7 @@ h5,
 h6 {
     font-family: Montserra;
     text-align: center;
+    font-weight: bold;
 }
 
 .nav-logo {
@@ -237,7 +238,7 @@ float: left;
     width: 100%;
     height: 850px;
     background-color: white;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 #container-autopilot-head {
@@ -347,10 +348,13 @@ float: left;
 }
 
 .autopilotTitle {
-    width: 30%;
-    height: 50px;
-    margin-left: 35%;
-    margin-right: 35%;
+    width: 100%;
+    height: 100px;
+    font-size: 40px;
+    float: left;
+}
+.autopilotTitle h1 {
+    font-size: 40px;
 }
 
 .autopilotText {
@@ -392,19 +396,20 @@ float: left;
 /*------DIV CLASS -----*/
 
 .introTitle {
-    width: 50%;
+    width: 100%;
     height: 100px;
     font-size: 40px;
-    margin-left: 40%;
-    margin-top: 50px;
-    font-weight: bold;
     float: left;
+}
+.introTitle h1 {
+    margin-top: 50px;
+    font-size: 40px;
 }
 
 .introText {
     width: 70%;
     height: 250px;
-    margin: 0 15% 0 15%;
+    margin: 50px 15% 0 15%;
     text-align: justify;
     font-size: 25px;
     border-left: 0.2em solid #13495B;
@@ -578,18 +583,6 @@ float: left;
     color: white;
 }
 
-
-/* Caption text */
-
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
 
 
 /* Number text (1/3 etc) */
