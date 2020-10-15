@@ -38,9 +38,10 @@ h6 {
 
 .nav-logo {
     padding: 10px 60px 10px 60px;
-    background-image: url("../img/logo.png");
+    background-image: url("../img/logov2.png");
     background-repeat: no-repeat;
     cursor: pointer;
+    background-color: transparent;
 }
 
 nav {
@@ -78,6 +79,10 @@ nav li a:visited {
     color: white;
 }
 
+.select {
+    background-color: #1A88AC;
+    color: #87CFE7;
+}
 
 
 /* DIV PRINCIPAL */
@@ -93,25 +98,24 @@ nav li a:visited {
 #container-body {
     width: 100%;
     height: auto;
-    background-color: black;
 }
 
 #container-intro {
-    width: 99%;
+    width: 100%;
     height: 500px;
     background-color: white;
     margin: 0 auto;
 }
 
 #container-tech {
-    width: 99%;
+    width: 100%;
     height: 850px;
     background-color: orange;
     margin: 0 auto;
 }
 
 #container-tech-head {
-    width: 99%;
+    width: 100%;
     height: 350px;
     background-color: green;
     margin: 0 auto;
@@ -119,21 +123,21 @@ nav li a:visited {
 
 #container-tech-body {
     margin: 0 auto;
-    width: 99%;
+    width: 100%;
     height: 500px;
     background-color: blue;
     margin: 0 auto;
 }
 
 #container-autopilot {
-    width: 99%;
+    width: 100%;
     height: 850px;
     background-color:white;
     margin: 0 auto;
 }
 
 #container-autopilot-head {
-    width: 99%;
+    width: 100%;
     height: 350px;
     background-color:white;
     margin: 0 auto;
@@ -141,42 +145,42 @@ nav li a:visited {
 }
 
 #container-autopilot-body {
-    width: 99%;
+    width: 100%;
     height: 500px;
     background-color:white;
     margin: 0 auto;
 }
 
 #container-autopilot-menu-collapse {
-    width: 99%;
+    width: 100%;
     height: 100px;
     margin: 0 auto;
     background-color: grey;
 }
 
 #container-menu-collapse {
-    width: 99%;
+    width: 100%;
     height: 900px;
     margin: 0 auto;
     background-color: darkgrey;
 }
 
 #container-menu-collapse-1 {
-    width: 99%;
+    width: 100%;
     height: 300px;
     margin: 0 auto;
     background-color: #13242A;
 }
 
 #container-menu-collapse-2 {
-    width: 99%;
+    width: 100%;
     height: 300px;
     margin: 0 auto;
     background-color: #264580;
 }
 
 #container-menu-collapse-3 {
-    width: 99%;
+    width: 100%;
     height: 300px;
     margin: 0 auto;
     background-color: #13242A;
@@ -186,7 +190,7 @@ nav li a:visited {
     width: 100%;
     height: 500px;
     padding: 1rem;
-    background-color: #32200b;
+    background-color: #CAEAF4;
     position: relative;
     margin: 0 auto;
 }
@@ -194,14 +198,19 @@ nav li a:visited {
 #container-footer-left {
     width: 50%;
     height: 425px;
-    background-color: darkred;
+    background-color: #D7EFF7;
     float: left;
+}
+
+#container-footer-left ul {
+    margin: 3.5rem;
+    font-size: xx-large;
 }
 
 #container-footer-right {
     width: 50%;
     height: 425px;
-    background-color: darkviolet;
+    background-color: #D7EFF7;
     float: left;
 }
 .autopilotTitle{
@@ -281,7 +290,7 @@ nav li a:visited {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -297,12 +306,13 @@ nav li a:visited {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: black;
+  color: white;
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: black;
   font-size: 20px;
   padding: 8px 12px;
   position: absolute;
@@ -313,7 +323,7 @@ nav li a:visited {
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
+  color: black;
   font-size: 18px;
   padding: 8px 12px;
   position: absolute;
@@ -326,10 +336,14 @@ nav li a:visited {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #666;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+
+.dotPosition {
+    text-align: center;
 }
 
 .active, .dot:hover {
@@ -383,4 +397,8 @@ nav li a:visited {
     width: 15rem;
     height: 2rem;
     border-radius: 1.2rem;
+}
+
+.copyright {
+    
 }

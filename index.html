@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
     <title>AMST</title>
 </head>
 
@@ -13,18 +14,21 @@
         <nav>
             <ul>
                 <li class="nav-logo"></li>
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#intro">Introduction</a></li>
-                <li><a href="#tech">Technologie</a></li>
-                <li><a href="#autopilot">AutoPilot</a></li>
-                <li><a href="#gallery">Galerie</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="select"><a class="navbutton" href="#home">Accueil</a></li>
+                <li><a class="navbutton" href="#intro">Introduction</a></li>
+                <li><a class="navbutton" href="#tech">Technologie</a></li>
+                <li><a class="navbutton" href="#autopilot">AutoPilot</a></li>
+                <li><a class="navbutton" href="#gallery">Galerie</a></li>
+                <li><a class="navbutton" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <div id="container-home">
 
-    </div>
+    <section id="home">
+        <div id="container-home">
+
+        </div>
+    </section>
 
     <div id="container-body">
         <!-- CONTAINER TECHNOLOGIE -->
@@ -62,8 +66,8 @@
 
                         sera la matière grise. L’intelligence artificielle encadre le tout
 
-                            pour faire prendre les bonnes décisions au bon moment à votre
-                        </p>
+                        pour faire prendre les bonnes décisions au bon moment à votre
+                    </p>
                 </div>
                 <div id="container-tech-body">
                     <p>Perceptions de l’information :
@@ -74,9 +78,9 @@
 
                         de l’<strong>équiper d’une multitude de capteurs :
 
-                        caméras, radars, lasers tels que des lidars, capteurs
+                            caméras, radars, lasers tels que des lidars, capteurs
 
-                        ultrasons. Tous ces capteurs constituent en quelque sorte</strong>
+                            ultrasons. Tous ces capteurs constituent en quelque sorte</strong>
 
                         les « yeux » de la voiture et collectent en permanence toutes les
 
@@ -91,7 +95,7 @@
                         différente se complètent.
                     </p>
                 </div>
-                        
+
             </div>
         </section>
         <!-- FIN CONTAINER TECHNOLOGIE -->
@@ -165,13 +169,12 @@
 
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
 
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+                <div class="dotPosition">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
         </section>
     </div>
@@ -181,8 +184,10 @@
     <section id="contact">
         <footer>
             <div id="container-footer-left">
-                <a href="">Mention légales</a>
-                <a href="">&copy; AMST 2020</a>
+                <ul>
+                    <li><a href="">Mention légales</a></li>
+                </ul>
+                <a class="copyright" href="">&copy; AMST 2020</a>
             </div>
             <div id="container-footer-right">
                 <h1>Contact</h1>
@@ -229,6 +234,7 @@
     <!-- FIN FOOTER -->
 
     <script src="assets/js/scriptSlide.js"></script>
+    <script src="assets/js/scriptSectionScroll.js"></script>
 </body>
 
 </html>
