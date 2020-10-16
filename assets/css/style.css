@@ -226,7 +226,7 @@ nav li a:visited {
 #container-tech {
     width: 100%;
     height: 850px;
-    background-color: #D7EFF7;
+    background-color: #1B93BB;
     margin: 0 auto;
     font-size: 25px;
     font-family: Lora;
@@ -245,6 +245,7 @@ nav li a:visited {
     border-left: 0.2rem solid #13495B;
     padding-left: 20px;
     text-align: center;
+    color: #fff
 }
 #container-tb-left img {
     border-radius: 1.2rem;
@@ -257,6 +258,7 @@ nav li a:visited {
 }
 #container-tech-body p{
     padding-top: 50px;
+    color: #fff
 }
 #container-tb-left{
 width: 700px;
@@ -279,7 +281,7 @@ float: left;
     min-height: 700px;
     height: auto;
     padding-bottom: 25px;
-    background-color: #CAEAF4;
+    background-color: #1982A5;
     padding-top: 20px;
     padding-bottom: 75px;
 }
@@ -323,7 +325,7 @@ float: left;
     min-height: 500px;
     padding-top: 3rem;
     padding-bottom: 1rem;
-    background-color: #CAEAF4;
+    background-color: #113845;
     display: block;
 }
 
@@ -407,6 +409,7 @@ float: left;
 .autopilotText p {
     border-left: 0.2rem solid #13495b;
     padding-left: 30px;
+    color: #fff;
 }
 .autopilotImage {
     background-image: url("https://www.usinenouvelle.com/mediatheque/7/6/7/000476767_image_896x598/vehicule-autonome.jpg");
@@ -434,6 +437,7 @@ float: left;
     margin-top: 70px;
     padding-left: 30px;
     border-left: 0.2rem solid #13495b;
+    color: #fff;
 }
 .autopiloth3 {
     margin: 0 auto;
