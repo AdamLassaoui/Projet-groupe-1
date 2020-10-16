@@ -43,7 +43,7 @@
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #222;
+    background-color: #87CFE7;
     color: white;
     cursor: pointer;
     padding: 10px 15px 10px 15px;
@@ -52,7 +52,7 @@
 }
 
 #scrollBtn:hover {
-    background-color: #888;
+    background-color: #1DA4D1;
 }
 
 #scrollBtn i {
@@ -158,7 +158,7 @@ nav li a {
 }
 
 nav li:hover {
-    background-color: #134F62;
+    background-color: #167794b7;
     text-decoration: transparent;
 }
 
@@ -167,7 +167,7 @@ nav li a:visited {
 }
 
 .select {
-    background-color: #187C13495B9D;
+    background-color: rgb(39, 109, 131);
     color: #87CFE7;
 }
 
@@ -197,16 +197,17 @@ nav li a:visited {
 #container-tech {
     width: 100%;
     height: 850px;
-    background-color: white;
+    background-color: #D7EFF7;
     margin: 0 auto;
     font-size: 25px;
     font-family: Lora;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 #container-tech-head {
     width: 100%;
     height: 350px;
-    background-color: white;  
 }
 #container-tech-head p {
     width: 50%;
@@ -216,11 +217,12 @@ nav li a:visited {
     padding-left: 20px;
     text-align: center;
 }
-
+#container-tb-left img {
+    border-radius: 1.2rem;
+}
 #container-tech-body {
     width: 100%;
     height: 500px;
-    background-color: white;
     font-size: 20px;
     text-align: center;
 }
@@ -245,13 +247,16 @@ float: left;
 }
 #container-autopilot {
     width: 100%;
-    height: 850px;
-    background-color: white;
-    margin: auto;
+    min-height: 700px;
+    height: auto;
+    padding-bottom: 25px;
+    background-color: #CAEAF4;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 #container-autopilot-head {
-    margin: 0 15% 0 15%;
+    height: auto;
     text-align: justify;
     font-size: 25px;
     padding-left: 30px;
@@ -260,11 +265,11 @@ float: left;
 
 #container-autopilot-body {
     width: 100%;
-    height: 500px;
-    background-color: white;
+    height: auto;
     margin: 0 auto;
     font-size: 25px;
     font-family: Lora;
+    float: left;
 }
 
 #container-autopilot-menu-collapse {
@@ -321,6 +326,7 @@ float: left;
     width: 50%;
     height: 425px;
     float: left;
+    padding-top: 10px;
 }
 .logoFooter {
     text-align:center;
@@ -377,9 +383,8 @@ float: left;
 .autopilotImage {
     background-image: url("https://www.usinenouvelle.com/mediatheque/7/6/7/000476767_image_896x598/vehicule-autonome.jpg");
     width: 30%;
-    margin-left: 100px;
-    margin-right: 100px;
     height: 300px;
+    margin-left: 100px;
     float: left;
     margin-top: 6%;
     border-radius: 7px;
@@ -388,9 +393,9 @@ float: left;
 .autopilotText2 {
     width: 50%;
     height: 270px;
-    margin-right: 100px;
+    margin-left: 100px;
     text-align: center;
-    float: right;
+    float: left;
     margin-top: 5%;
     padding-left: 35px;
     font-size: 20px;
