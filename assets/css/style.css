@@ -132,6 +132,7 @@ nav {
     z-index: 100;
 }
 
+
 nav ul {
     list-style-type: none;
     padding-left: 0;
@@ -171,16 +172,39 @@ nav li a:visited {
     color: #87CFE7;
 }
 
+@media screen and (max-width: 730px)
+{
+    nav {
+        position: fixed;
+        top: 0;
+        background-color: #caeaf4c2;
+        width: 100%;
+        height: 112px;
+        z-index: 100;
+    }
+    nav ul {
+        margin-top: 0px;
+    }
+
+    nav li {
+        display: inline-block;
+        margin-top: 5px;
+    }
+
+}
+
 
 /* DIV PRINCIPAL */
 
 #container-home {
     width: 100%;
-    height: 600px;
+    min-height: 600px;
+    height: auto;
     background: url(../img/bg-home.jpg);
     background-repeat: no-repeat;
     background-position-y: -215px;
 }
+
 
 #container-body {
     width: 100%;
@@ -189,15 +213,20 @@ nav li a:visited {
 
 #container-intro {
     width: 100%;
-    height: 500px;
+    min-height: 500px;
+    height: auto;
     background-color: white;
     margin: 0 auto;
+}
+
+#container-intro p {
+    margin-top: 0px;
 }
 
 #container-tech {
     width: 100%;
     height: 850px;
-    background-color: #D7EFF7;
+    background-color: #1B93BB;
     margin: 0 auto;
     font-size: 25px;
     font-family: Lora;
@@ -207,7 +236,8 @@ nav li a:visited {
 
 #container-tech-head {
     width: 100%;
-    height: 350px;
+    height: auto;
+    min-height: 250px;
 }
 #container-tech-head p {
     width: 50%;
@@ -216,41 +246,51 @@ nav li a:visited {
     border-left: 0.2rem solid #13495B;
     padding-left: 20px;
     text-align: center;
+    color: #fff
 }
-#container-tb-left img {
-    border-radius: 1.2rem;
-}
+
 #container-tech-body {
     width: 100%;
-    height: 500px;
+    min-height: 500px;
+    height: auto;
     font-size: 20px;
     text-align: center;
 }
 #container-tech-body p{
     padding-top: 50px;
+    color: #fff
 }
 #container-tb-left{
-width: 700px;
-height: 467px;
-margin-left: 5%;
-float: left;
-}
-#container-tb-right{
-    float: right;
     width: 40%;
     height: 400px;
-    margin-right: 5%;
+    float: left;
 }
-.container-tb-right p{
+#container-tb-left img {
+    width: 80%;
+    margin-top: 60px;
+    border-radius: 1.2rem;
+}
+
+#container-tb-right{
+    float: left;
+    width: 60%;
+    height: 400px;
+}
+#container-tb-right p{
+    width: 85%;
     font-size: 25px;
     text-align: justify;
+    margin-left: 40px;
 }
+
+
+
 #container-autopilot {
     width: 100%;
     min-height: 700px;
     height: auto;
     padding-bottom: 25px;
-    background-color: #CAEAF4;
+    background-color: #1982A5;
     padding-top: 20px;
     padding-bottom: 75px;
 }
@@ -294,7 +334,7 @@ float: left;
     min-height: 500px;
     padding-top: 3rem;
     padding-bottom: 1rem;
-    background-color: #CAEAF4;
+    background-color: #113845;
     display: block;
 }
 
@@ -378,6 +418,7 @@ float: left;
 .autopilotText p {
     border-left: 0.2rem solid #13495b;
     padding-left: 30px;
+    color: #fff;
 }
 .autopilotImage {
     background-image: url("https://www.usinenouvelle.com/mediatheque/7/6/7/000476767_image_896x598/vehicule-autonome.jpg");
@@ -386,7 +427,7 @@ float: left;
     margin-left: 100px;
     float: left;
     margin-top: 6%;
-    border-radius: 7px;
+    border-radius: 1.2rem;
 }
 
 .autopilotText2 {
@@ -405,6 +446,7 @@ float: left;
     margin-top: 70px;
     padding-left: 30px;
     border-left: 0.2rem solid #13495b;
+    color: #fff;
 }
 .autopiloth3 {
     margin: 0 auto;
@@ -486,7 +528,7 @@ float: left;
 
 .content-1 {
     width: 100%;
-    height: 300px;
+    height: auto;
     float: left;
     background-color: #353535;
 }
@@ -494,7 +536,7 @@ float: left;
 .content-2 {
     border-top: 0.3em solid #13495B;
     width: 100%;
-    height: 300px;
+    height: auto;
     float: left;
     background-color: #353535;
 }
@@ -502,7 +544,7 @@ float: left;
 .content-3 {
     border-top: 0.3em solid #13495B;
     width: 100%;
-    height: 300px;
+    height: auto;
     float: left;
     background-color: #353535;
 }
@@ -510,7 +552,7 @@ float: left;
 .content-text1 {
     margin-top: 50px;
     width: 30%;
-    height: 250px;
+    height: auto;
     float: left;
     text-align: justify;
     margin-left: 10%;
@@ -523,7 +565,7 @@ float: left;
     color: #f5f5f5;
     margin-top: 80px;
     width: 30%;
-    height: 250px;
+    height: auto;
     float: left;
     text-align: justify;
     margin-left: 10%;
@@ -534,7 +576,7 @@ float: left;
     color: #f5f5f5;
     margin-top: 70px;
     width: 30%;
-    height: 250px;
+    height: auto;
     float: left;
     text-align: justify;
     margin-left: 10%;
@@ -577,13 +619,14 @@ float: left;
     top: 45%;
     cursor: pointer;
     padding: 16px;
-    color: black;
+    color: white;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
     float: right;
+    border-radius: 0.1rem;
 }
 
 .next {
@@ -598,6 +641,7 @@ float: left;
 .next:hover {
     background-color: black;
     color: white;
+    border-radius: 1rem;
 }
 
 
@@ -647,6 +691,10 @@ float: left;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
+}
+.mySlides img {
+    border-radius: 5px;
+    
 }
 
 @-webkit-keyframes fade {
@@ -701,4 +749,204 @@ float: left;
     width: 15rem;
     height: 2rem;
     border-radius: 1.2rem;
+}
+
+.parallex {
+    background: url('../img/bg-parallex-2.jpg'); display: block; background-repeat: no-repeat; background-size: cover; background-position-y: -1300px; width: 100%; height: 250px;
+}
+
+@media screen and (max-width: 780px)
+{
+    #container-intro {
+        height: 575px;
+    }
+    .introText {
+        margin-left: 10px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 520px)
+{
+    #container-intro {
+        height: 650px;
+    }
+    .introText {
+        margin-left: 10px;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    #container-intro {
+        height: 800px;
+    }
+    .introText {
+        margin-left: 10px;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 1140px)
+{
+    #container-tech  {
+        height: auto;
+    }
+    #container-tech-head p {
+        width: 80%;
+    }
+    #container-tech-body  {
+        height: auto;
+    }
+    #container-tech-body div {
+        float: inherit;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    #container-autopilot  {
+        height: auto;
+    }
+    #container-autopilot div  {
+        height: auto;
+        display: block;
+        float: inherit;
+    }
+    #container-autopilot div div  {
+        height: auto;
+        display: block;
+        float: inherit;
+    }
+    #container-autopilot-head  {
+        height: auto;
+    }
+    #container-autopilot-body {
+        height: auto;
+    }
+    .autopilotText {
+        margin: 0;
+        width: 85%;
+    }
+    .autopilotText p {
+        margin-left: 15px;
+        width: 85%;
+    }
+    .autopilotText2 {
+        margin: 0;
+        width: 85%;
+    }
+    .autopilotText2 p {
+        margin-left: 15px;
+        width: 85%;
+    }
+
+    .autopilotImage {
+        width: 80%;
+        min-height: 250px;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media screen and (max-width: 1120px)
+{
+    .content-text1 {
+        display: block;
+        float: inherit;   
+        width: 90%; 
+        margin-left: 20px;
+    }
+    .image-content-1 {
+        display: block;
+        float: inherit;   
+        width: 100%;
+     }
+     .content-text2 {
+        display: block;
+        float: inherit;   
+        width: 90%; 
+        margin-left: 20px;
+    }
+    .image-content-2 {
+        display: block;
+        float: inherit;   
+        width: 100%;
+     }
+     .content-text3 {
+        display: block;
+        float: inherit;   
+        width: 90%; 
+        margin-left: 20px;
+    }
+    .image-content-3 {
+        display: block;
+        float: inherit;   
+        width: 100%;
+     }
+}
+
+@media screen and (max-width: 1120px)
+{
+    .mySlides img {
+        border-radius: 5px;
+        max-width: 850px;
+    }
+}
+
+@media screen and (max-width: 940px)
+{
+    .mySlides img {
+        border-radius: 5px;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 630px)
+{
+    .mySlides img {
+        border-radius: 5px;
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 1000px)
+{
+    footer div {
+        display: block;
+        float: inherit;  
+        width: 100% !important;
+    }
+    .parallex {
+        background-position-y: -500px;
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    #container-img-left {
+        width: 9%;
+        height: 90%;
+        float: left;
+    }
+    
+    #container-img-center {
+        width: 80%;
+        height: 90%;
+        float: left;
+    }
+    
+    #container-img-right {
+        width: 9%;
+        height: 90%;
+        float: left;
+    }
+    
+    #container-img-bottom {
+        width: 100%;
+        height: 10%;
+        float: left;
+    }
 }
